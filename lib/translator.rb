@@ -2,9 +2,8 @@ require 'yaml'
 require 'pry'
 
 def load_library(file_path)
-  new_hash = {"get_emoticon" => {}, "get_"
-  new_hash = YAML.load_file(file_path)
-  binding.pry
+  new_hash = {"get_emoticon" => AML.load_file(file_path), "get_meaning" => AML.load_file(file_path)}
+  return new_hash
   
 end
 
